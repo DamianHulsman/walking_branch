@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { View, SafeAreaView, Text, StyleSheet, ScrollView, Button } from 'react-native';
+import React from "react";
+import { SafeAreaView, Text, StyleSheet, ScrollView } from 'react-native';
 const Acties = () => {
     try {
 

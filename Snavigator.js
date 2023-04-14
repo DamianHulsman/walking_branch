@@ -4,8 +4,6 @@ import Home from './screens/Home';
 import Planning from "./screens/Planning";
 import Acties from "./screens/Acties";
 
-// import DrawerContent from "./screens/drawer";
-
 const Stack = createNativeStackNavigator();
 
 const StackNavigator = () => {

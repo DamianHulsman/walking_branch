@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import { View, SafeAreaView, Text, StyleSheet, ScrollView, Button, Alert } from 'react-native';
-import data from './planning.json';
+import { View, SafeAreaView, Text, StyleSheet, ScrollView, Button } from 'react-native';
+import data from '../assets/planning.json';
+
 const Planning = () => {
     try {
         const [plan, setPlan] = useState([]);
@@ -13,7 +14,7 @@ const Planning = () => {
                     <View style={styles.tableitem} id="planningtable"><Text>{el.organisers}</Text></View>
                     <View style={styles.tableitem} id="planningtable"><Text>{el.activity}</Text></View>
                     <View style={styles.tableitem} id="planningtable"><Text>€{el.cost}</Text></View>
-                    <View style={styles.tableitem} id="planningtable"><Button onPress={() => { alert('Kan nog niet bewerken \nWork in progress') }} title="Edit"></Button></View>
+                    <View style={styles.tableitem} id="planningtable"><Button onPress={() => { alert('Kan nog niet bewerken \nWork in progress'); console.log(`Edit attempt at id: ${el.id}`); }} title="Edit"></Button></View>
                 </View>
             ));
             setPlan(planElements);
@@ -25,7 +26,7 @@ const Planning = () => {
         return (
             <SafeAreaView style={{margin: 0, marginBottom: 45, alignItems: 'center'}}>
                 <ScrollView>
-                {plan}
+                    {plan}
                 </ScrollView>
             </SafeAreaView>
         );
