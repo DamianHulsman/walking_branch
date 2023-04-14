@@ -6,7 +6,7 @@ const Acties = () => {
         return (
             <SafeAreaView style={{margin: 0, marginBottom: 45, alignItems: 'center'}}>
                 <ScrollView>
-                    <Text>Acties is nog Work in Progress</Text>
+                    <Text>Acties is nog work in progress</Text>
                 </ScrollView>
             </SafeAreaView>
         );
