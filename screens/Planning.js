@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { View, SafeAreaView, Text, StyleSheet, ScrollView } from 'react-native';
+import { View, SafeAreaView, Text, StyleSheet, ScrollView, Button, Alert } from 'react-native';
 import data from './planning.json';
 const Planning = () => {
     try {
@@ -13,6 +13,7 @@ const Planning = () => {
                     <View style={styles.tableitem} id="planningtable"><Text>{el.organisers}</Text></View>
                     <View style={styles.tableitem} id="planningtable"><Text>{el.activity}</Text></View>
                     <View style={styles.tableitem} id="planningtable"><Text>€{el.cost}</Text></View>
+                    <View style={styles.tableitem} id="planningtable"><Button onPress={() => { alert('Work in progress') }} title="Edit"></Button></View>
                 </View>
             ));
             setPlan(planElements);
