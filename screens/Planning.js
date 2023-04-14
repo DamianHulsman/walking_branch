@@ -13,7 +13,7 @@ const Planning = () => {
                     <View style={styles.tableitem} id="planningtable"><Text>{el.organisers}</Text></View>
                     <View style={styles.tableitem} id="planningtable"><Text>{el.activity}</Text></View>
                     <View style={styles.tableitem} id="planningtable"><Text>€{el.cost}</Text></View>
-                    <View style={styles.tableitem} id="planningtable"><Button onPress={() => { alert('Work in progress') }} title="Edit"></Button></View>
+                    <View style={styles.tableitem} id="planningtable"><Button onPress={() => { alert('Nog niet functioneel') }} title="Edit"></Button></View>
                 </View>
             ));
             setPlan(planElements);

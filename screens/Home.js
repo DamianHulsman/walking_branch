@@ -7,9 +7,7 @@ const Home = () => {
     
     return (
         <SafeAreaView style={{flex: 1, alignItems: "center"}}>
-            <Button onPress={() => {
-                console.log("test");
-            }} title="test" />
+            <Button onPress={() => nav.navigate('Acties')} title="Acties"></Button>
             <Button onPress={() => nav.navigate('Planning')} title="Planning"></Button>
         </SafeAreaView>
     )
