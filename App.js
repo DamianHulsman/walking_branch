@@ -3,9 +3,14 @@ import { NavigationContainer } from '@react-navigation/native';
 import Snavigator from './Snavigator';
 
 export default function App() {
-  return (
-    <NavigationContainer>
+  try {
+    return (
+      <NavigationContainer>
         <Snavigator />
-    </NavigationContainer>
-  );
+      </NavigationContainer>
+    );
+  } catch (err) {
+    console.error(err);
+    alert('Error: ' + err.message);
+  }
 }

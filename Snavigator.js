@@ -7,15 +7,20 @@ import Acties from "./screens/Acties";
 const Stack = createNativeStackNavigator();
 
 const StackNavigator = () => {
-    return (
-        <Stack.Navigator screenOptions={{ headerShown: true }}>
-            <Stack.Group>
-                <Stack.Screen name="Home" component={Home}/>
-                <Stack.Screen name="Planning" component={Planning}/>
-                <Stack.Screen name="Acties" component={Acties}/>
-            </Stack.Group>
-        </Stack.Navigator>
-    );
-
+    try {
+        return (
+            <Stack.Navigator screenOptions={{ headerShown: true }}>
+                <Stack.Group>
+                    <Stack.Screen name="Home" component={Home} />
+                    <Stack.Screen name="Planning" component={Planning} />
+                    <Stack.Screen name="Acties" component={Acties} />
+                </Stack.Group>
+            </Stack.Navigator>
+        );
+    } catch (err) {  
+        console.error(err);
+        alert('Error: ' + err.message);
+    }
 };
+
 export default StackNavigator;

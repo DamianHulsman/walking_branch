@@ -30,8 +30,9 @@ const Planning = () => {
                 </ScrollView>
             </SafeAreaView>
         );
-    } catch (err) {
-        console.log(err);
+    } catch (err) {  
+        console.error(err);
+        alert('Error: ' + err.message);
     }
 }
 
