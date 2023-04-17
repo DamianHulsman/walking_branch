@@ -4,10 +4,10 @@
     "slug": "walking_branch",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
+    "icon": "./assets/new_icon.png",
+    "userInterfaceStyle": "dark",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/loading.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -25,7 +25,7 @@
       "package": "com.dhulsman889.walking_branch"
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/new_icon.png"
     },
     "extra": {
       "eas": {
