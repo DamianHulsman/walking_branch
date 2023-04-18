@@ -24,9 +24,9 @@ const Planning = () => {
             planningdata();
         }, []);
         return (
-            <SafeAreaView style={{margin: 0, marginBottom: 45, marginTop: 45, alignItems: 'center', maxHeight: 580}}>
+            <SafeAreaView style={{margin: 0, marginBottom: 45, marginTop: 30, alignItems: 'center', maxHeight: 600}}>
                 <Text style={styles.pagetitle}>Planning</Text>
-                <ScrollView>
+                <ScrollView style={{marginTop: 10}}>
                     {plan}
                 </ScrollView>
             </SafeAreaView>
@@ -49,7 +49,7 @@ const styles = StyleSheet.create({
     },
     pagetitle: {
         fontSize: 25,
-        borderColor: '#00f',
+        borderColor: '#0f0',
         borderWidth: 2,
         borderRadius: 15,
         padding: 5,

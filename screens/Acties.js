@@ -1,13 +1,15 @@
 import React from "react";
-import { SafeAreaView, Text, StyleSheet, ScrollView } from 'react-native';
+import { SafeAreaView, Text, StyleSheet, ScrollView, View } from 'react-native';
 const Acties = () => {
     try {
 
         return (
             <SafeAreaView style={{margin: 0, marginBottom: 45, alignItems: 'center', alignSelf: 'center'}}>
                 <ScrollView>
-                    <Text style={styles.pagetitle}>Acties</Text>
-                    <Text style={{alignSelf: 'center'}}>WIP</Text>
+                    <View>
+                        <Text style={styles.pagetitle}>Acties</Text>
+                        <Text style={{alignSelf: 'center'}}>Work in Progress</Text>
+                    </View>
                 </ScrollView>
             </SafeAreaView>
         );
@@ -24,7 +26,8 @@ const styles = StyleSheet.create({
         borderWidth: 2,
         borderRadius: 15,
         padding: 5,
-        alignItems: "center"
+        alignItems: "center",
+        alignSelf: 'center',
     }
 });
 
