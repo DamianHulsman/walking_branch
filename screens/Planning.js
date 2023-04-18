@@ -9,14 +9,14 @@ const Planning = () => {
         const planningdata = async () => {
             const jsonfile = data.data;
             const planElements = jsonfile.map(el => (
-                <View style={{ padding: 10, height: 200, }} key={el.id}>
+                <View style={{ padding: 10, height: 200, flex: 1 }} key={el.id}>
                     <View style={styles.tableitem} id="planningtable"><Text>{el.date}</Text></View>
                     <View style={styles.tableitem} id="planningtable"><Text>{el.organisers}</Text></View>
                     <View style={styles.tableitem} id="planningtable"><Text>{el.activity}</Text></View>
                     <View style={styles.tableitem} id="planningtable"><Text>€{el.cost}</Text></View>
-                    <View style={[styles.tableitem, {alignItems: 'center', alignSelf: 'center', display: 'flex', flexDirection: 'row'}]} id="planningtable">
-                        <Button onPress={() => { alert(`Opkomst:\nDatum: ${el.date}\nOrganisatie: ${el.organisers}\nActiviteit: ${el.activity}\nKosten: €${el.cost}`); }} title="   View    " />
-                        <Button disabled={el.disabled} onPress={() => { alert('Kan nog niet bewerken \nWork in progress'); }} title="    Edit    " />
+                    <View style={[styles.tableitem, {alignItems: 'center', alignSelf: 'center', display: 'flex', flexDirection: 'row', justifyContent: 'center', flex: 1}]} id="planningtable">
+                        <Button style={{flex: 1}} onPress={() => { alert(`Opkomst:\nDatum: ${el.date}\nOrganisatie: ${el.organisers}\nActiviteit: ${el.activity}\nKosten: €${el.cost}`); }} title="   View    " />
+                        <Button style={{flex: 1}} disabled={el.disabled} onPress={() => { alert('Kan nog niet bewerken \nWork in progress'); }} title="    Edit    " />
                     </View>
                 </View>
             ));
