@@ -3,12 +3,12 @@ import React from 'react';
 // import Snavigator from './Snavigator';
 import Planning from './screens/Planning';
 import Acties from './screens/Acties';
-import { SafeAreaView } from 'react-native';
+import { SafeAreaView, ScrollView } from 'react-native';
 
 export default function App() {
   try {
     return (
-      <SafeAreaView>
+      <SafeAreaView style={{}}>
         <Planning />
         <Acties />
       </SafeAreaView>

@@ -4,9 +4,10 @@ const Acties = () => {
     try {
 
         return (
-            <SafeAreaView style={{margin: 0, marginBottom: 45, alignItems: 'center'}}>
+            <SafeAreaView style={{margin: 0, marginBottom: 45, alignItems: 'center', alignSelf: 'center'}}>
                 <ScrollView>
-                    <Text>Acties is nog work in progress</Text>
+                    <Text style={styles.pagetitle}>Acties</Text>
+                    <Text style={{alignSelf: 'center'}}>WIP</Text>
                 </ScrollView>
             </SafeAreaView>
         );
@@ -17,14 +18,13 @@ const Acties = () => {
 }
 
 const styles = StyleSheet.create({
-    tableitem: {
-        backgroundColor: '#0ff',
-        borderColor: '#000',
-        borderWidth: 1,
-        padding: 2,
-        margin: 0,
-        maxWidth: 180,
-        minWidth: 50,
+    pagetitle: {
+        fontSize: 25,
+        borderColor: '#00f',
+        borderWidth: 2,
+        borderRadius: 15,
+        padding: 5,
+        alignItems: "center"
     }
 });
 
