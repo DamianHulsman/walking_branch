@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 // import Snavigator from './Snavigator';
 import Planning from './screens/Planning';
 // import Acties from './screens/Acties';
-import { SafeAreaView, /* ScrollView,*/ Text, View, StyleSheet } from 'react-native';
+import { SafeAreaView, /* ScrollView,*/ Text, View, StyleSheet,  } from 'react-native';
 
 export default function App() {
   try {
@@ -38,7 +38,7 @@ const styles = StyleSheet.create({
     borderWidth: 2,
     borderRadius: 15,
     padding: 5,
-    alignItems: "center",
+    alignItems: 'center',
     alignSelf: 'center',
   }
 });
