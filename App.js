@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 // import { NavigationContainer } from '@react-navigation/native';
 // import Snavigator from './Snavigator';
 import Planning from './screens/Planning';
-// import Acties from './screens/Acties';
+import Acties from './screens/Acties';
 import { SafeAreaView, /* ScrollView,*/ Text, View, StyleSheet,  } from 'react-native';
 
 export default function App() {
@@ -21,7 +21,7 @@ export default function App() {
         </View>
 
         <Planning />
-        {/* <Acties /> */}
+        <Acties />
       </SafeAreaView>
     );
   } catch (err) {

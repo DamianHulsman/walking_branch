@@ -4,7 +4,7 @@ const Acties = () => {
     try {
 
         return (
-            <SafeAreaView style={{margin: 0, marginBottom: 45, alignItems: 'center', alignSelf: 'center'}}>
+            <SafeAreaView style={{margin: 0, marginBottom: 45}}>
                 <ScrollView>
                     <View>
                         <Text style={styles.pagetitle}>Acties</Text>
@@ -22,12 +22,11 @@ const Acties = () => {
 const styles = StyleSheet.create({
     pagetitle: {
         fontSize: 25,
-        borderColor: '#00f',
+        borderColor: '#0f0',
         borderWidth: 2,
         borderRadius: 15,
         padding: 5,
         alignItems: "center",
-        alignSelf: 'center',
     }
 });
 

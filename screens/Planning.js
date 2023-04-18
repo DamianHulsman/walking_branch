@@ -9,12 +9,15 @@ const Planning = () => {
         const planningdata = async () => {
             const jsonfile = data.data;
             const planElements = jsonfile.map(el => (
-                <View style={{ padding: 10 }} key={el.id}>
+                <View style={{ padding: 10, height: 200, }} key={el.id}>
                     <View style={styles.tableitem} id="planningtable"><Text>{el.date}</Text></View>
                     <View style={styles.tableitem} id="planningtable"><Text>{el.organisers}</Text></View>
                     <View style={styles.tableitem} id="planningtable"><Text>{el.activity}</Text></View>
                     <View style={styles.tableitem} id="planningtable"><Text>€{el.cost}</Text></View>
-                    <View style={styles.tableitem} id="planningtable"><Button onPress={() => { alert('Kan nog niet bewerken \nWork in progress'); }} title="Edit"></Button></View>
+                    <View style={[styles.tableitem, {alignItems: 'center', alignSelf: 'center', display: 'flex', flexDirection: 'row'}]} id="planningtable">
+                        <Button onPress={() => { alert(`Opkomst:\nDatum: ${el.date}\nOrganisatie: ${el.organisers}\nActiviteit: ${el.activity}\nKosten: €${el.cost}`); }} title="   View    " />
+                        <Button disabled={el.disabled} onPress={() => { alert('Kan nog niet bewerken \nWork in progress'); }} title="    Edit    " />
+                    </View>
                 </View>
             ));
             setPlan(planElements);
@@ -24,10 +27,10 @@ const Planning = () => {
             planningdata();
         }, []);
         return (
-            <SafeAreaView style={{margin: 0, marginBottom: 45, marginTop: 30, alignItems: 'center', maxHeight: 600}}>
-                <Text style={styles.pagetitle}>Planning</Text>
-                <ScrollView style={{marginTop: 10}}>
-                    {plan}
+            <SafeAreaView style={{margin: 0, marginTop: 30, /*alignItems: 'center',*/ maxHeight: 600}}>
+                <Text style={styles.pagetitle}>Opkomsten</Text>
+                <ScrollView style={{marginTop: 10}} horizontal>
+                        {plan}
                 </ScrollView>
             </SafeAreaView>
         );
@@ -44,8 +47,7 @@ const styles = StyleSheet.create({
         borderWidth: 1,
         padding: 2,
         margin: 0,
-        maxWidth: 180,
-        minWidth: 50,
+        width: 180,
     },
     pagetitle: {
         fontSize: 25,
