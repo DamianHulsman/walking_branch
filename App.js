@@ -1,13 +1,17 @@
 import React from 'react';
-import { NavigationContainer } from '@react-navigation/native';
-import Snavigator from './Snavigator';
+// import { NavigationContainer } from '@react-navigation/native';
+// import Snavigator from './Snavigator';
+import Planning from './screens/Planning';
+import Acties from './screens/Acties';
+import { SafeAreaView } from 'react-native';
 
 export default function App() {
   try {
     return (
-      <NavigationContainer>
-        <Snavigator />
-      </NavigationContainer>
+      <SafeAreaView>
+        <Planning />
+        <Acties />
+      </SafeAreaView>
     );
   } catch (err) {
     console.error(err);
