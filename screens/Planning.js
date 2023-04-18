@@ -14,7 +14,7 @@ const Planning = () => {
                     <View style={styles.tableitem} id="planningtable"><Text>{el.organisers}</Text></View>
                     <View style={styles.tableitem} id="planningtable"><Text>{el.activity}</Text></View>
                     <View style={styles.tableitem} id="planningtable"><Text>€{el.cost}</Text></View>
-                    <View style={styles.tableitem} id="planningtable"><Button onPress={() => { alert('Kan nog niet bewerken \nWork in progress'); console.log(`Edit attempt at id: ${el.id}`); }} title="Edit"></Button></View>
+                    <View style={styles.tableitem} id="planningtable"><Button onPress={() => { alert('Kan nog niet bewerken \nWork in progress'); console.info(`Edit attempt at id: ${el.id}`); }} title="Edit"></Button></View>
                 </View>
             ));
             setPlan(planElements);
