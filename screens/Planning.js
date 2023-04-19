@@ -6,7 +6,7 @@ const Planning = () => {
     try {
         const [plan, setPlan] = useState([]);
 
-        const planningdata = async () => {
+        const planningdata = () => {
             const jsonfile = data.data;
             const planElements = jsonfile.map(el => (
                 <View style={{ padding: 10, height: 200, flex: 1 }} key={el.id}>
@@ -15,7 +15,7 @@ const Planning = () => {
                     <View style={styles.tableitem} id="planningtable"><Text>{el.activity}</Text></View>
                     <View style={styles.tableitem} id="planningtable"><Text>€{el.cost}</Text></View>
                     <View style={[styles.tableitem, {alignItems: 'center', alignSelf: 'center', display: 'flex', flexDirection: 'row', justifyContent: 'center', flex: 1}]} id="planningtable">
-                        <Button style={{flex: 1}} onPress={() => { alert(`Opkomst:\nDatum: ${el.date}\nOrganisatie: ${el.organisers}\nActiviteit: ${el.activity}\nKosten: €${el.cost}`); }} title="   View    " />
+                        <Button style={{flex: 1}} onPress={() => { alert(`Opkomst:\nDatum: ${el.date}\nOrganisatie: ${el.organisers}\nActiviteit: ${el.activity}\nKosten: €${el.cost}`); }} title="    View    " />
                         <Button style={{flex: 1}} disabled={el.disabled} onPress={() => { alert('Kan nog niet bewerken \nWork in progress'); }} title="    Edit    " />
                     </View>
                 </View>
@@ -27,9 +27,9 @@ const Planning = () => {
             planningdata();
         }, []);
         return (
-            <SafeAreaView style={{margin: 0, marginTop: 30, /*alignItems: 'center',*/ maxHeight: 600}}>
-                <Text style={styles.pagetitle}>Opkomsten</Text>
-                <ScrollView style={{marginTop: 10}} horizontal>
+            <SafeAreaView style={{margin: 0, marginTop: 30, alignItems: 'center', maxHeight: 600}}>
+                <Text style={[styles.pagetitle, {alignSelf: 'center'}]}>Opkomsten</Text>
+                <ScrollView horizontal>
                         {plan}
                 </ScrollView>
             </SafeAreaView>
@@ -55,7 +55,8 @@ const styles = StyleSheet.create({
         borderWidth: 2,
         borderRadius: 15,
         padding: 5,
-        alignItems: "center"
+        alignItems: "center",
+        width: '100%',
     }
 });
 

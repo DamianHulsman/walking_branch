@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 // import Snavigator from './Snavigator';
 import Planning from './screens/Planning';
 import Acties from './screens/Acties';
+import Kamp from './screens/Kamp';
 import { SafeAreaView, /* ScrollView,*/ Text, View, StyleSheet,  } from 'react-native';
 
 export default function App() {
@@ -22,6 +23,7 @@ export default function App() {
 
         <Planning />
         <Acties />
+        <Kamp />
       </SafeAreaView>
     );
   } catch (err) {
