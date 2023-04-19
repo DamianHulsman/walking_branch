@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { View, SafeAreaView, Text, StyleSheet, ScrollView, Button } from 'react-native';
-import data from '../assets/planning.json';
+import data from '../assets/planning copy.json';
+// import * as fs from 'fs';
 
 const Planning = () => {
     try {
@@ -26,6 +27,7 @@ const Planning = () => {
         React.useEffect(() => {
             planningdata();
         }, []);
+
         return (
             <SafeAreaView style={{margin: 0, marginTop: 30, alignItems: 'center', maxHeight: 600}}>
                 <Text style={[styles.pagetitle, {alignSelf: 'center'}]}>Opkomsten</Text>
@@ -36,7 +38,7 @@ const Planning = () => {
         );
     } catch (err) {  
         console.error(err);
-        alert('Error: ' + err.message);
+        // alert('Error: ' + err.message);
     }
 }
 

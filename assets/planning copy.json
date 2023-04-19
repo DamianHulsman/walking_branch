@@ -1,0 +1,123 @@
+{
+    "data":
+    [{
+        "id": 1,
+        "date": "14-4-2023",
+        "organisers": "Myron + Jorian",
+        "activity": "Tusselspel opkomst (trefbal slagbal enz)",
+        "cost": "50,00",
+        "disabled": false 
+    },
+    {
+        "id": 2,
+        "date": "21-4-2023",
+        "organisers": "Liese + Stan",
+        "activity": "Knutselen",
+        "cost": "0,00",
+        "disabled": true
+    },
+    {
+        "id": 3,
+        "date": "28-4-2023",
+        "organisers": "Joost + Damian",
+        "activity": "Kampvuur",
+        "cost": "0,00",
+        "disabled": false
+    },
+    {
+        "id": 4,
+        "date": "5-5-2023",
+        "organisers": "Stan + Daan",
+        "activity": "Pubquiz",
+        "cost": "0,00",
+        "disabled": false
+    },
+    {
+        "id": 5,
+        "date": "12-5-2023",
+        "organisers": "Tom + Stan",
+        "activity": "Dorppuzzel",
+        "cost": "0,00",
+        "disabled": false
+    },
+    {
+        "id": 6,
+        "date": "20-5-2023",
+        "organisers": "Jorian + ????",
+        "activity": "Vrij invullen",
+        "cost": "0,00",
+        "disabled": false
+    },
+    {
+        "id": 7,
+        "date": "25-5-2023",
+        "organisers": "Lynn + Liese",
+        "activity": "Tijenraan",
+        "cost": "0,00",
+        "disabled": false
+    },
+    {
+        "id": 8,
+        "date": "3-6-2023",
+        "organisers": "Myron + Tom",
+        "activity": "Stad bezoeken zaterdag",
+        "cost": "0,00",
+        "disabled": false
+    },
+    {
+        "id": 9,
+        "date": "9-6-2023",
+        "organisers": "Joost + Damian",
+        "activity": "Bowlen",
+        "cost": "0,00",
+        "disabled": false
+    },
+    {
+        "id": 10,
+        "date": "16-6-2023",
+        "organisers": "Nienke + Jorian",
+        "activity": "Cluedo",
+        "cost": "0,00",
+        "disabled": false
+    },
+    {
+        "id": 11,
+        "date": "23-6-2023",
+        "organisers": "???? + Liese",
+        "activity": "Koken",
+        "cost": "0,00",
+        "disabled": false
+    },
+    {
+        "id": 12,
+        "date": "30-6-2023",
+        "organisers": "Daan + Lynn",
+        "activity": "Portret schilderen",
+        "cost": "0,00",
+        "disabled": false
+    },
+    {
+        "id": 13,
+        "date": "7-7-2023",
+        "organisers": "???? + Atisha",
+        "activity": "Karaoke",
+        "cost": "0,00",
+        "disabled": false
+    },
+    {
+        "id": 14,
+        "date": "14-7-2023",
+        "organisers": "Daan + Stan",
+        "activity": "Chocolade Fondue",
+        "cost": "0,00",
+        "disabled": false
+    },
+    {
+        "id": 15,
+        "date": "21-7-2023",
+        "organisers": "Iedereen",
+        "activity": "Zomerkamp voorbereiden",
+        "cost": "0,00",
+        "disabled": false
+    }]
+}
