@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { View, SafeAreaView, Text, StyleSheet, ScrollView, Button } from 'react-native';
-import data from '../assets/planning copy.json';
+import data from '../assets/planning.json';
 // import * as fs from 'fs';
 
 const Planning = () => {

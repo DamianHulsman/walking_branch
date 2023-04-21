@@ -50,7 +50,52 @@
                 }
             ],
             "loon": "€4,50",
-            "disabled": false
+            "disabled": true
+        },
+        {
+            "id": 2,
+            "name": "Douwpop",
+            "dates": [
+                {
+                    "datum": "2-7-2023",
+                    "times": [
+                        {
+                            "time": "14:15 - 21:30  (Entree)"
+                        },
+                        {
+                            "time": "16:30 - 22:30  (Entree)"
+                        },
+                        {
+                            "time": "14:00 - 19:00  (Parkeren)"
+                        },
+                        {
+                            "time": "15:30 - 22:00  (Parkeren)"
+                        }
+                    ]
+                },
+                {
+                    "datum": "3-7-2023",
+                    "times": [
+                        {
+                            "time": "9:45 - 17:00    (Entree)"
+                        },
+                        {
+                            "time": "15:00 - 22:00  (Entree)"
+                        },
+                        {
+                            "time": "9:00 - 15:00    (Parkeren)"
+                        },
+                        {
+                            "time": "10:00 - 16:00  (Parkeren)"
+                        },
+                        {
+                            "time": "15:00 - 21:00  (Parkeren)"
+                        }
+                    ]
+                }
+            ],
+            "loon": "€8,00",
+            "disabled": true
         }
     ]
 }
