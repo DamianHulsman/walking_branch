@@ -6,7 +6,8 @@
         "organisers": "Myron + Jorian",
         "activity": "Tusselspel opkomst (trefbal slagbal enz)",
         "cost": "50,00",
-        "disabled": true 
+        "disabled": true,
+        "notes": "" 
     },
     {
         "id": 2,
@@ -14,7 +15,8 @@
         "organisers": "Liese + Stan",
         "activity": "Knutselen",
         "cost": "0,00",
-        "disabled": true
+        "disabled": true,
+        "notes": ""
     },
     {
         "id": 3,
@@ -22,7 +24,8 @@
         "organisers": "Joost + Damian",
         "activity": "Kampvuur",
         "cost": "0,00",
-        "disabled": true
+        "disabled": true,
+        "notes": ""
     },
     {
         "id": 4,
@@ -30,7 +33,8 @@
         "organisers": "Stan + Daan",
         "activity": "Pubquiz",
         "cost": "0,00",
-        "disabled": true
+        "disabled": true,
+        "notes": ""
     },
     {
         "id": 5,
@@ -38,7 +42,8 @@
         "organisers": "Tom + Stan",
         "activity": "Dorppuzzel",
         "cost": "0,00",
-        "disabled": true
+        "disabled": true,
+        "notes": ""
     },
     {
         "id": 6,
@@ -46,7 +51,8 @@
         "organisers": "Jorian + ????",
         "activity": "Vrij invullen",
         "cost": "0,00",
-        "disabled": true
+        "disabled": true,
+        "notes": ""
     },
     {
         "id": 7,
@@ -54,7 +60,8 @@
         "organisers": "Lynn + Liese",
         "activity": "Tijenraan",
         "cost": "0,00",
-        "disabled": true
+        "disabled": true,
+        "notes": ""
     },
     {
         "id": 8,
@@ -62,7 +69,8 @@
         "organisers": "Myron + Tom",
         "activity": "Stad bezoeken zaterdag",
         "cost": "0,00",
-        "disabled": true
+        "disabled": true,
+        "notes": ""
     },
     {
         "id": 9,
@@ -70,7 +78,8 @@
         "organisers": "Joost + Damian",
         "activity": "Bowlen",
         "cost": "0,00",
-        "disabled": true
+        "disabled": true,
+        "notes": ""
     },
     {
         "id": 10,
@@ -78,7 +87,8 @@
         "organisers": "Nienke + Jorian",
         "activity": "Cluedo",
         "cost": "0,00",
-        "disabled": true
+        "disabled": true,
+        "notes": ""
     },
     {
         "id": 11,
@@ -86,7 +96,8 @@
         "organisers": "???? + Liese",
         "activity": "Koken",
         "cost": "0,00",
-        "disabled": true
+        "disabled": true,
+        "notes": ""
     },
     {
         "id": 12,
@@ -94,7 +105,8 @@
         "organisers": "Daan + Lynn",
         "activity": "Portret schilderen",
         "cost": "0,00",
-        "disabled": true
+        "disabled": true,
+        "notes": ""
     },
     {
         "id": 13,
@@ -102,7 +114,8 @@
         "organisers": "???? + Atisha",
         "activity": "Karaoke",
         "cost": "0,00",
-        "disabled": true
+        "disabled": true,
+        "notes": ""
     },
     {
         "id": 14,
@@ -110,7 +123,8 @@
         "organisers": "Daan + Stan",
         "activity": "Chocolade Fondue",
         "cost": "0,00",
-        "disabled": true
+        "disabled": true,
+        "notes": ""
     },
     {
         "id": 15,
@@ -118,6 +132,7 @@
         "organisers": "Iedereen",
         "activity": "Zomerkamp voorbereiden",
         "cost": "0,00",
-        "disabled": true
+        "disabled": true,
+        "notes": ""
     }]
 }

@@ -1,46 +1,47 @@
 import React, { useState } from "react";
 import { View, SafeAreaView, Text, StyleSheet, ScrollView, Button } from 'react-native';
-import data from '../assets/planning.json';
-// import * as fs from 'fs';
+// import data from '../assets/planning.json';
+import axios from "axios";
 
 const Planning = () => {
-    try {
-        const [plan, setPlan] = useState([]);
+    const [plan, setPlan] = useState([]);
 
-        const planningdata = () => {
-            const jsonfile = data.data;
-            const planElements = jsonfile.map(el => (
+    const planningdata = async () => {
+        try {
+            const plandata = await axios.get('http://192.168.2.63/WalkingBranchAPI/server.php?fn=getPlanning');
+
+            const planElements = plandata.data.map(el => (
                 <View style={{ padding: 10, height: 200, flex: 1 }} key={el.id}>
                     <View style={styles.tableitem} id="planningtable"><Text>{el.date}</Text></View>
-                    <View style={styles.tableitem} id="planningtable"><Text>{el.organisers}</Text></View>
+                    <View style={styles.tableitem} id="planningtable"><Text>{el.organisatie}</Text></View>
                     <View style={styles.tableitem} id="planningtable"><Text>{el.activity}</Text></View>
                     <View style={styles.tableitem} id="planningtable"><Text>€{el.cost}</Text></View>
                     <View style={[styles.tableitem, {alignItems: 'center', alignSelf: 'center', display: 'flex', flexDirection: 'row', justifyContent: 'center', flex: 1}]} id="planningtable">
-                        <Button style={{flex: 1}} onPress={() => { alert(`Opkomst:\nDatum: ${el.date}\nOrganisatie: ${el.organisers}\nActiviteit: ${el.activity}\nKosten: €${el.cost}`); }} title="    View    " />
+                        <Button style={{flex: 1}} onPress={() => { alert(`Opkomst:\nDatum: ${el.date}\nOrganisatie: ${el.organisatie}\nActiviteit: ${el.activity}\nKosten: €${el.cost}\nNotities: ${el.notes}`); }} title="    View    " />
                         <Button style={{flex: 1}} disabled={el.disabled} onPress={() => { alert('Kan nog niet bewerken \nWork in progress'); }} title="    Edit    " />
                     </View>
                 </View>
             ));
             setPlan(planElements);
-        };
+        } catch (error) {
+            console.error(error);
+            // alert('Error: ' + error.message);
+        }
+    };
 
-        React.useEffect(() => {
-            planningdata();
-        }, []);
+    React.useEffect(() => {
+        planningdata();
+    }, []);
 
-        return (
-            <SafeAreaView style={{margin: 0, marginTop: 30, alignItems: 'center', maxHeight: 600}}>
-                <Text style={[styles.pagetitle, {alignSelf: 'center'}]}>Opkomsten</Text>
-                <ScrollView horizontal>
-                        {plan}
-                </ScrollView>
-            </SafeAreaView>
-        );
-    } catch (err) {  
-        console.error(err);
-        // alert('Error: ' + err.message);
-    }
-}
+    return (
+        <SafeAreaView style={{margin: 0, marginTop: 30, alignItems: 'center', maxHeight: 600}}>
+            <Text style={[styles.pagetitle, {alignSelf: 'center'}]}>Opkomsten</Text>
+            <ScrollView horizontal>
+                {plan}
+            </ScrollView>
+        </SafeAreaView>
+    );
+};
 
 const styles = StyleSheet.create({
     tableitem: {
