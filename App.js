@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react';
 import Planning from './screens/Planning';
 import Acties from './screens/Acties';
 import Kamp from './screens/Kamp';
-import { SafeAreaView, /* ScrollView,*/ Text, View, StyleSheet,  } from 'react-native';
+import { SafeAreaView, Text, View, StyleSheet,  } from 'react-native';
 
 export default function App() {
   try {
